@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dylan's Pet Project - Quiz</title>
+        <link rel ="stylesheet" href="css/style.css">
+        <link href="http://fonts.cdnfonts.com/css/rockabye" rel="stylesheet">  <!--Font import for headers -->
+        <script src="js/quiz.js"></script>
+    </head>
+    <body>      
+            <div class="flex-column" id="quiz__page">
+                <section class="flex-column">
+                    <h1>Plant keeper</h1>
+                    <h2>How well do you know your plants?</h2>
+                </section>
+                <div id="quiz_container">
+                    <form id="plant__quiz">
+                        <div class="question__container">
+                            <label for="question__1" class="question__label">Question 1:<span class="question__text"> Name the plant that needs the most water.</span></label>
+                            <input type="text" name="question__1" id="question__1" class="answer__input"/>
+                            <p id="response__1" class="answer_response"></p>
+                        </div>
+                        <br/>
+                        <div class="question__container">
+                            <label for="question__2" class="question__label">Question 2:<span class="question__text"> Which location would be best for a cactus? </span></label>
+                            <select name="question__2" id="q2__select">
+                                <option value="bathroom">A bathroom with no windows</option>
+                                <option value="window">A bright windowsill</option>
+                                <option value="bedroom">A dimly lit bedroom</option>
+                            </select>
+                            <p id="response__2" class="answer_response"></p>
+                            </div>
+                        <br/>
+                        <div class="question__container">
+                            <label for="question__3" class="question__label">Question 3:<span class="question__text"> Name the plant that produces smaller versions of itself.</span></label>
+                            <input type="text" name="question__3" id="question__3" class="answer__input"/>
+                            <p id="response__3" class="answer_response"></p>
+                        </div>
+                        <br/>
+                        <input type="submit" value="Check answers" id="check__answers"/>
+                    </form>
+                    <p id="quiz__message"></p>
+                    <form action="index.html">
+                        <input id="home__btn" type="submit" value="Return to Plants" />
+                    </form>
+                </div>
+            </div>
+    </body>
+</html>

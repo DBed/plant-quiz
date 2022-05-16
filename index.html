@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dylan's Pet Project</title>
+        <link rel ="stylesheet" href="css/style.css">
+        <link href="http://fonts.cdnfonts.com/css/rockabye" rel="stylesheet">  <!--Font import for headers -->
+        <script src="js/script.js"></script>
+    </head>
+    <body>       
+        <main class="flex-column">
+            <section class="flex-column" id="plant-selection">
+                <h1>Plant keeper</h1>
+                <h2>Learn about your new plant</h2>
+                <div id="plant-options"> <!-- Plant Selection window -->
+                    <a id="cactus" class="option flex-column"> <!--Template for plant button -->
+                        <img class="plant-img" src="images/cactus.PNG">
+                        <h3 class="plant-name">Cactus</h3>
+                        <p class="plant-desc">A hardy plant with low watering needs and high sun tolerance.</p>
+                    </a>
+                    <a id="sPlant" class="option flex-column">
+                        <img class="plant-img" src="images/sp.PNG">
+                        <h3 class="plant-name">Spider Plant</h3>
+                        <p class="plant-desc">A unique plant, adaptable to a variety of conditions.</p>
+                    </a>
+                    <a id="bFern" class="option flex-column">
+                        <img class="plant-img" src="images/BF2.PNG">
+                        <h3 class="plant-name">Boston Fern</h3>
+                        <p class="plant-desc">A luscious plant with particular requirements. </p>
+                    </a>
+                </div>
+                <div id="plant-view"> <!--View for an individual plant, content edited through JS -->
+                    <div class="flex-column">
+                        <h3 id="focus-plant-name">Plant Name</h3>
+                        <img id="focus-plant-img" src="" alt="An image of the chosen plant">
+                    </div>
+                    <div class="flex-column">
+                        <p id="plant-info"></p>
+                        <h4>Light Requirements:</h4>
+                        <p id="light-req"></p>
+                        <h4>Water Requirements:</h4>
+                        <p id="waterMsg"></p>
+                        <!-- <button id="water-btn">Water me!</button> Button for water reminder --> 
+                        <!-- </div>
+                        <p id="water-reminder"></p> -->
+                        <button id="return-btn">Back to plant List</button>
+                    </div>
+                </div>
+                <div id="quiz-link-container">
+                    <button id="quiz-link"><a href="./quiz.html">Take the Quiz!</a></button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

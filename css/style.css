@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+
+/* CONTENTS 
+    1. Main Page 
+    2. Individual plant view
+    2. Quiz Page 
+*/
+
+
+/* GENERAL STYLES */
+body{
+    background-color: #6F9979;
+    opacity: 75%;
+    padding: none;
+    font-family: 'Rockabye', sans-serif;
+}
+
+main{
+    background-image: url(../images/plant-clearing.jpg);
+    background-size: 100%, auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+    margin: none;
+}
+
+h1{
+    color: #F9EEDB ;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+h2{
+    height: 10%;
+    text-align: center;
+    font-size: 35px;
+    color: #EBDADF;
+    letter-spacing: 2px;
+}
+
+h4{
+    margin: 0px;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* MAIN PAGE */
+
+#plant-selection{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background-color: #6F9979;
+    border-radius: 10px;
+    border: 4px solid white;
+}
+
+#plant-selection h2{
+    margin: 15px;
+}
+
+#plant-options{
+    height: 75%;
+    width: auto;
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.option{
+    background-color: #A9CB96;
+    width: 33%;
+    height: auto;
+    padding: 2em;
+    border: 2px solid #F9EEDB;
+}
+
+.option:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 3px solid white;
+    color: white;
+}
+
+#quiz-link{
+    font-family: "Rockabye", sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+    color: #EBDADF;
+    background-color: #6F9979;
+    border: 3px solid #EBDADF;
+    width: 300px;
+    height: auto;
+}
+
+#quiz-link a{
+    text-decoration: none;
+    color: #EBDADF;
+}
+
+#quiz-link:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    border-color: white;
+    color: white;
+}
+
+#quiz-link-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* 2. INDIVIDUAL PLANT CARDS */
+#plant-view{
+    display: none;
+    width: 95%;
+    background: #F9EEDB;
+    justify-content: space-evenly;
+}
+
+#plant-view img{
+    width: 80%;
+    height: auto;
+}
+
+#plant-view .flex-column{
+    margin: 0.5em;
+    margin-bottom: none;
+}
+
+#plant-view h4{
+    font-size: 25px;
+}
+
+#focus-plant-name{
+    font-size: 30px;
+    font-weight: lighter;
+    color: #6F9979;
+    margin-bottom: 0;
+}
+
+#plant-view p{
+    font-size: 20px;
+}
+
+#water-btn{
+    font-family: "Rockabye", sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+    color: white;
+    background-color: cadetblue;
+    border: 3px solid #EBDADF;
+    width: 300px;
+    height: auto;
+}
+
+#return-btn{
+    font-family: "Rockabye", sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+    color: #F9EEDB;
+    background-color: #85a672;
+    border: 3px solid #EBDADF;
+    width: 300px;
+    height: auto;
+}
+
+#return-btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#water-btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#water-reminder{
+    font-size: 35px;
+    font-weight: lighter;
+    color:cadetblue;
+    font-family: "Rockabye", sans-serif;
+}
+
+.plant-img, .plant-name, .plant-desc{
+    width: 100%;
+}
+
+.plant-img{
+    border: 5px solid #EBDADF;
+}
+
+.plant-name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0;
+    font-family: 'Rockabye', sans-serif;
+}
+
+.plant-desc{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* 3.  QUIZ PAGE */
+
+#quiz_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quiz__page{
+    background-color:#6F9979;
+}
+
+#plant__quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+}
+
+#quiz__message{
+    font-size: 45px;
+    color: #EBDADF;
+    text-align: center;
+}
+
+.question__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.question__label{
+    font-size: 40px;
+}
+
+.answer__response{
+    display: hidden;
+}
+
+.answer__input{
+    font-size: 30px;
+}
+
+.question__text{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+#check__answers{
+    font-family: 'Rockabye', sans-serif;
+    border: 3px solid black;
+    font-size: 130%;
+    width: 20%;
+    align-self: center;
+    padding: 1em;
+}
+
+#home__btn{
+    margin-top: 1em;
+    font-family: 'Rockabye', sans-serif;
+    border: 3px solid #EBDADF;
+    font-size: 130%;
+    align-self: center;
+    padding: 1em;
+    color: #EBDADF;
+    background-color: black;
+}
+
+#home__btn:hover, #check__answers:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#q2__select{
+    width: 45%;
+    height: 3em;
+    font-size: 25px;
+    text-align: center;
+}
