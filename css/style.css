@@ -82,6 +82,7 @@ p{
 
 #plant-options{
     height: 75%;
+    max-height: 90%;
     width: auto;
     display: flex;
     margin-bottom: 2em;
@@ -95,7 +96,7 @@ p{
 
 .option{
     background-color: #A9CB96;
-    width: 33%;
+    /* width: 33%; */
     height: auto;
     padding: 2em;
     border: 2px solid #F9EEDB;
@@ -238,6 +239,13 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 20px;
+    width: 80%;
+    align-self: center;
 }
 
 #quiz__page{
@@ -253,7 +261,7 @@ p{
 
 #quiz__message{
     font-size: 45px;
-    color: #EBDADF;
+    color: #d990a6;
     text-align: center;
 }
 
@@ -278,7 +286,7 @@ p{
 
 .question__text{
     font-family: 'Source Sans Pro', sans-serif;
-    color: white;
+    color: #6F9979;
 }
 
 #check__answers{
@@ -319,7 +327,13 @@ p{
         flex-direction: column;
     }
 
-    .flex-column {
-        flex-direction: row;
+    .option{
+        height: 300px;
+        align-items: center;
+    }
+
+    .plant-img{
+       width: 200px;
+       height: auto;
     }
 }
